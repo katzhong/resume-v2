@@ -1,0 +1,165 @@
+
+\input{glyphtounicode}
+
+\pdfgentounicode=1
+
+\documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+
+
+
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Katharine Zhong}
+\tagline{Second Year - Computer Software Engineering Co-op}
+
+\photoR{6cm}{engineeringco-op_workmark_standard}
+
+\personalinfo{%
+  
+  \email{kathari2@ualberta.ca} 
+  \phone{825-439-5498} \newline
+  \linkedin{katharine-zhong}
+  \github{github.com/katzhong} 
+}
+
+\makecvheader
+
+
+\AtBeginEnvironment{itemize}{\small}
+
+\columnratio{0.7}
+
+
+\begin{paracol}{2}
+
+\cvsection{Project Experience}
+
+\cvevent{Recipe Website Project}{HackED Hackathon}{Jan 2023 -- Jan 2023}{Edmonton, AB}
+\begin{itemize}
+\item Developed an archive-style interactive recipe website, with an idea of using \textbf{machine learning} to sift through recipes and \textbf{web scraping} to gain more recipes in the archive.
+\item Worked with a team of five to create a website using \textbf{HTML, CSS, and Javascript} alongside \textbf{GitHub} for collaboration, playing a lead role in fleshing out project idea.
+\item Utilized \textbf{Figma and Canva} to create a UX design mock-up, as well as design of team logo and general look of website.
+\end{itemize}
+
+\divider
+
+\cvevent{Google Chrome Extension Project}{Personal}{Dec 2022 -- Present}{Edmonton, AB} 
+\begin{itemize}
+\item Designing a Google Chrome extension that blocks a hardcoded URL using \textbf{HTML, CSS, and Javascript}, working with \textbf{JSON and APIs} to obtain the desired functionality.
+\item Reinforcing computer technology abilities through connecting different programming languages and
+utilizing \textbf{web technologies} and \textbf{extension components}.
+\end{itemize}
+
+\divider
+
+\cvevent{Kick Off Project: AlbertaSat Ground-Station Software}{AlbertaSat}{Sept 2022 --  Present}{Edmonton, AB}
+
+\begin{itemize}
+\item Applying various programming-related tools, for example, \textbf{Python, React, and Git}, to satellite-related projects for awareness of technical aspects of various \textbf{subsystems}.
+\item Enhancing \textbf{full-stack development} skills with an emphasis on \textbf{back-end} development, by employing use of various \textbf{programming languages, frameworks}, and \textbf{REST APIs}, while gaining familiarity with \textbf{objected
+oriented} programming and networking concepts like \textbf{TCP} and \textbf{IP}.
+\end{itemize}
+
+
+\cvsection{Community Involvement}
+
+\cvevent{Senior Cadet}{699 Jasper Place Royal Canadian Air Cadet Squadron}{Sept 2016 -- Jul 2019}{Edmonton, AB}
+\begin{itemize}
+\item Led a flight of \textbf{30+} cadets on and off parade square, holding meetings addressing concerns in preparation for parade or in response to questions or issues for example regarding proper uniform maintenance or wear or correct drill.
+\item Taught air, leadership, and survival-related classes in-person and remotely to groups of \textbf{20+} cadets by adopting various methods to keep a large group engaged.
+\end{itemize}
+\divider
+\cvevent{President/Chief Editor of MacSource News}{Archbishop MacDonald High School}{Aug 2020 -- Jul 2019}{Edmonton, AB}
+\begin{itemize}
+\item Redesigned and updated the MacSource website, getting up to 200 views per week in Canada and
+internationally, using a combination of website template and \textbf{HTML}.
+\item Established new ground rules and standards for team and implemented throughout year by
+communicating with members and addressing issues as needed.
+\end{itemize}
+
+
+
+\newpage
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Programming Languages}
+
+\cvskill{Python}{4}
+% \divider
+
+\cvskill{C++}{3}
+% \divider
+
+\cvskill{HTML}{4} %% supports X.5 values.
+\cvskill{CSS}{3}
+\cvskill{Javascript}{2}
+\cvskill{LaTex}{3}
+
+
+\cvsection{Awards}
+\begin{itemize}
+\item{Faculty of Engineering Inspiring Leadership Award (2021)}
+\item{Alexander Rutherford Scholarship (2021)}\\
+\item{Duke of Edinburgh International Bronze Award (2021)}
+\item{Archbishop MacDonald Outstanding Service Award (2021)}
+\item{Cadet League Service Award (2020)}
+\item{Archbishop MacDonald Magna Cum Laude (2019-2021)}
+\end{itemize}
+
+\cvsection{Student Clubs}
+
+\cvachievement{\faFemale}{Fem+ Engineering Mentorship Program}{Mentor}
+
+\divider
+
+\cvachievement{\faSpaceShuttle}{AlbertaSat}{Admin and on-boarding Software Team Member}
+
+\divider
+
+\cvachievement{\faBrain}{NeurAlbertaTech}{Volunteer}
+
+\divider
+
+\cvachievement{\faHeart}{Diversity in Engineering Club}{General Member}
+
+\cvsection{More Info}
+\cvtag{Mandarin Chinese (fluent)}
+\cvtag{French (basic)}
+\cvtag{Class 5 License (Clean Abstract)}
+
+
+\end{paracol}
+
+\end{document}
